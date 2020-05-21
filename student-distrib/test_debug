@@ -1,0 +1,6 @@
+make clean
+make dep
+make
+sudo gdb bootimg -batch                \
+    -ex "target remote 10.0.2.2:1234"  \
+    -ex "continue"
